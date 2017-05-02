@@ -1,0 +1,177 @@
+.contenedor{
+	max-width: 900px;
+	margin: auto;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+header{
+	background: #bbc1be;
+}
+
+.logo{
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+ul{
+	display: flex;
+	align-items: flex-end;
+	text-align: center;
+
+}
+
+ul li{
+	margin:10px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Montserrat alternates', sans-serif;
+	font-style: bold;
+	font-weight: bold;
+}
+
+ul li img{
+	width: 100%;
+	text-align: center;
+}
+
+.hamburguesa{
+	display: none;
+}
+
+/* SECCIÓN MAIN */
+
+.main{
+	background: url("../imagenes/fondo2.jpg") center no-repeat;
+	padding: 300px 0 ;
+}
+ 
+h1{
+	font-family: 'Montserrat alternates', sans-serif;
+	font-weight: 700;
+	font-size: 90px;
+	color: white;
+	position: relative;
+	bottom: 230px;
+}
+
+/* SECCIÓN ARRIBA */
+
+
+
+.arriba{
+	background:  rgb(187, 193, 190);
+	color: white;
+
+}
+
+.arriba img{
+	max-width: 300px;
+
+}
+
+.arriba article{
+	text-align: center;
+	font-family: 'open sans', sans-serif;
+	margin: 30px;
+}
+
+.arriba article p{
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+.arriba h3{
+	font-family: 'Montserrat alternates';
+	margin: 10px;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+
+.principal{
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	justify-content: space-around;
+}
+
+
+
+/*FORMULARIO CONTACTO*/
+
+.contact{
+	text-align: center;
+	padding: 50px 0;
+	color: white;
+	font-family: 'open sans', sans-serif;
+	font-size: 40px;
+	background:  rgb(187, 193, 190);
+}
+
+.contact h2{
+	font-family: 'Montserrat alternates';
+	font-size: 50px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+
+}
+
+.contact form input, .contact form textarea{
+	display: block;
+	width: 100%;
+	border-style: none;
+	font-family: 'open sans', sans-serif;
+	text-align: center;
+	margin: 10px;
+}
+
+.formulario{
+	padding: 20px;
+}
+
+.boton{
+	background:pink;
+	font-family: 'Montserrat alternates';
+}
+
+	
+
+/* MEDIAQUERIES*/
+
+
+@media screen and (max-width: 480px){
+	.hamburguesa{
+		display: inline-block;
+		margin: 10px;
+		font-size: 40px;
+		color: white;
+	}
+	.desaparecer{
+		display: none;
+	}
+	.principal{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	}
+	
+	.main h1{
+	font-size: 50px;
+	
+	}
+
+	.contact h2{
+		font-size: 35px;
+	}
+}
